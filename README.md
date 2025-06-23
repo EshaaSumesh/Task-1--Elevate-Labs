@@ -31,3 +31,11 @@ To perform a local network scan using Nmap to identify live devices, open ports,
 ## ✅ Output
 See `scan_results.txt` for raw Nmap output.
 
+## 🧪 Additional Nmap Scans Performed
+
+- `connect_scan.txt` — Full TCP Connect scan (`-sT`)
+- `udp_scan.txt` — UDP port scan (`-sU`)
+- `os_version_detection.txt` — OS and service detection (`-A`)
+- `advanced_scan.txt` — Miscellaneous advanced scan output
+
+
