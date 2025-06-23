@@ -1,10 +1,8 @@
-# Task-1--Elevate-Labs
-Cybersecurity -NMAP 
 
 # Elevate Labs Task 1: Local Network Port Scanning
 
 ## 🎯 Objective
-To perform a local network scan using Nmap to identify live devices, open ports, running services, and assess potential risks.
+To perform a local network scan using Nmap to identify live devices, open ports, running services and assess potential risks.
 
 ## 🛠 Tools Used
 - **Nmap** for port scanning
