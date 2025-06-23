@@ -1,0 +1,163 @@
+# Nmap 7.94SVN scan initiated Mon Jun 23 12:03:00 2025 as: /usr/lib/nmap/nmap -A -oN os_version_detection.txt 10.0.2.0/24
+Nmap scan report for 10.0.2.2
+Host is up (0.0012s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp  open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+3306/tcp open  mysql           MySQL 8.0.31
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.31_Auto_Generated_Server_Certificate
+| Not valid before: 2022-12-31T06:07:12
+|_Not valid after:  2032-12-28T06:07:12
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.31
+|   Thread ID: 50
+|   Capabilities flags: 65535
+|   Some Capabilities: LongColumnFlag, ConnectWithDatabase, InteractiveClient, Support41Auth, DontAllowDatabaseTableColumn, SwitchToSSLAfterHandshake, LongPassword, Speaks41ProtocolOld, FoundRows, ODBCClient, IgnoreSpaceBeforeParenthesis, SupportsTransactions, IgnoreSigpipes, Speaks41ProtocolNew, SupportsLoadDataLocal, SupportsCompression, SupportsAuthPlugins, SupportsMultipleResults, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: Z\x04'~i\x19cm|\x13qgH~0q\x05q n
+|_  Auth Plugin Name: caching_sha2_password
+|_ssl-date: TLS randomness does not represent time
+5357/tcp open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Service Unavailable
+|_http-server-header: Microsoft-HTTPAPI/2.0
+MAC Address: 52:54:00:12:35:02 (QEMU virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: QEMU user mode network gateway (98%), Bay Networks BayStack 450 switch (software version 3.1.0.22) (91%), Allied Telesyn AT-9006SX/SC switch (91%), Linux 2.6.18 (CentOS 5, x86_64, SMP) (91%), Cabletron ELS100-24TXM Switch or Icom IC-7800 radio transceiver (89%), Cisco Catalyst 1900 switch or RAD IPMUX-1 TDM-over-IP multiplexer (89%), Tyco 24 Port SNMP Managed Switch (89%), Bay Networks BayStack 450 switch (software version 4.2.0.16) (89%), 3com OfficeConnect 812 ADSL router (89%), IBM 8275-826 switch (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 1s
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2025-06-23T16:03:29
+|_  start_date: N/A
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.15 ms 10.0.2.2
+
+Nmap scan report for 10.0.2.3
+Host is up (0.0011s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp  open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+3306/tcp open  mysql           MySQL 8.0.31
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.31_Auto_Generated_Server_Certificate
+| Not valid before: 2022-12-31T06:07:12
+|_Not valid after:  2032-12-28T06:07:12
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.31
+|   Thread ID: 53
+|   Capabilities flags: 65535
+|   Some Capabilities: LongColumnFlag, ConnectWithDatabase, InteractiveClient, Support41Auth, DontAllowDatabaseTableColumn, SwitchToSSLAfterHandshake, LongPassword, Speaks41ProtocolOld, FoundRows, ODBCClient, IgnoreSpaceBeforeParenthesis, SupportsTransactions, IgnoreSigpipes, Speaks41ProtocolNew, SupportsLoadDataLocal, SupportsCompression, SupportsAuthPlugins, SupportsMultipleResults, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: fWGH\x07-T|	8B\x0DO>\x15S;\x1D\x17\x02
+|_  Auth Plugin Name: caching_sha2_password
+|_ssl-date: TLS randomness does not represent time
+5357/tcp open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+MAC Address: 52:54:00:12:35:03 (QEMU virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|bridge|switch|printer
+Running (JUST GUESSING): QEMU (96%), Oracle Virtualbox (94%), Bay Networks embedded (88%), Allied Telesyn embedded (87%), Samsung embedded (87%), Linux (87%), Dell embedded (87%), Wind River VxWorks (87%)
+OS CPE: cpe:/a:qemu:qemu cpe:/o:oracle:virtualbox cpe:/h:baynetworks:baystack_450 cpe:/h:alliedtelesyn:at-9006 cpe:/h:samsung:clp-315w cpe:/o:linux:linux_kernel:2.6.18 cpe:/h:dell:1815dn cpe:/o:windriver:vxworks
+Aggressive OS guesses: QEMU user mode network gateway (96%), Oracle Virtualbox (94%), Bay Networks BayStack 450 switch (software version 3.1.0.22) (88%), Allied Telesyn AT-9006SX/SC switch (87%), Samsung CLP-315W printer (87%), Linux 2.6.18 (CentOS 5, x86_64, SMP) (87%), Dell 1815dn printer (87%), VxWorks (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 1s
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2025-06-23T16:03:30
+|_  start_date: N/A
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.08 ms 10.0.2.3
+
+Nmap scan report for 10.0.2.4
+Host is up (0.0011s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp  open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+3306/tcp open  mysql           MySQL 8.0.31
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.31_Auto_Generated_Server_Certificate
+| Not valid before: 2022-12-31T06:07:12
+|_Not valid after:  2032-12-28T06:07:12
+|_ssl-date: TLS randomness does not represent time
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.31
+|   Thread ID: 52
+|   Capabilities flags: 65535
+|   Some Capabilities: LongColumnFlag, ConnectWithDatabase, InteractiveClient, Support41Auth, DontAllowDatabaseTableColumn, SwitchToSSLAfterHandshake, LongPassword, Speaks41ProtocolOld, FoundRows, ODBCClient, IgnoreSpaceBeforeParenthesis, SupportsTransactions, IgnoreSigpipes, Speaks41ProtocolNew, SupportsLoadDataLocal, SupportsCompression, SupportsAuthPlugins, SupportsMultipleResults, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: \x08XN(
+| m\x05_\%|j
+| zG\x12\x05\x0E\x01p
+|_  Auth Plugin Name: caching_sha2_password
+5357/tcp open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+MAC Address: 52:54:00:12:35:04 (QEMU virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|bridge|switch|printer
+Running (JUST GUESSING): QEMU (96%), Oracle Virtualbox (94%), Bay Networks embedded (88%), Allied Telesyn embedded (87%), Samsung embedded (87%), Linux (87%), Dell embedded (87%), Wind River VxWorks (87%)
+OS CPE: cpe:/a:qemu:qemu cpe:/o:oracle:virtualbox cpe:/h:baynetworks:baystack_450 cpe:/h:alliedtelesyn:at-9006 cpe:/h:samsung:clp-315w cpe:/o:linux:linux_kernel:2.6.18 cpe:/h:dell:1815dn cpe:/o:windriver:vxworks
+Aggressive OS guesses: QEMU user mode network gateway (96%), Oracle Virtualbox (94%), Bay Networks BayStack 450 switch (software version 3.1.0.22) (88%), Allied Telesyn AT-9006SX/SC switch (87%), Samsung CLP-315W printer (87%), Linux 2.6.18 (CentOS 5, x86_64, SMP) (87%), Dell 1815dn printer (87%), VxWorks (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2025-06-23T16:03:39
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.09 ms 10.0.2.4
+
+Nmap scan report for 10.0.2.16
+Host is up (0.000052s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.62 ((Debian))
+|_http-title: Apache2 Debian Default Page: It works
+|_http-server-header: Apache/2.4.62 (Debian)
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6.32
+OS details: Linux 2.6.32
+Network Distance: 0 hops
+
+Post-scan script results:
+| clock-skew: 
+|   1s: 
+|     10.0.2.3
+|_    10.0.2.2
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun 23 12:03:57 2025 -- 256 IP addresses (4 hosts up) scanned in 57.05 seconds

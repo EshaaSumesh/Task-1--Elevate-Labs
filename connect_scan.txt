@@ -1,0 +1,44 @@
+# Nmap 7.94SVN scan initiated Mon Jun 23 12:00:17 2025 as: /usr/lib/nmap/nmap --privileged -sT -oN connect_scan.txt 10.0.2.0/24
+Nmap scan report for 10.0.2.2
+Host is up (0.0062s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3306/tcp open  mysql
+5357/tcp open  wsdapi
+MAC Address: 52:54:00:12:35:02 (QEMU virtual NIC)
+
+Nmap scan report for 10.0.2.3
+Host is up (0.0071s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3306/tcp open  mysql
+5357/tcp open  wsdapi
+MAC Address: 52:54:00:12:35:03 (QEMU virtual NIC)
+
+Nmap scan report for 10.0.2.4
+Host is up (0.0064s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3306/tcp open  mysql
+5357/tcp open  wsdapi
+MAC Address: 52:54:00:12:35:04 (QEMU virtual NIC)
+
+Nmap scan report for 10.0.2.16
+Host is up (0.000054s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Mon Jun 23 12:00:29 2025 -- 256 IP addresses (4 hosts up) scanned in 11.08 seconds

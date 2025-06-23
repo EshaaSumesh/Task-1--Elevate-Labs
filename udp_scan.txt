@@ -1,0 +1,61 @@
+# Nmap 7.94SVN scan initiated Mon Jun 23 12:01:00 2025 as: /usr/lib/nmap/nmap -sU -oN udp_scan.txt 10.0.2.0/24
+Nmap scan report for 10.0.2.2
+Host is up (0.0022s latency).
+Not shown: 988 closed udp ports (port-unreach)
+PORT      STATE         SERVICE
+67/udp    open|filtered dhcps
+123/udp   open|filtered ntp
+137/udp   open|filtered netbios-ns
+500/udp   open|filtered isakmp
+1900/udp  open|filtered upnp
+3702/udp  open|filtered ws-discovery
+4500/udp  open|filtered nat-t-ike
+5050/udp  open|filtered mmcc
+5353/udp  open|filtered zeroconf
+5355/udp  open|filtered llmnr
+53006/udp open|filtered unknown
+55544/udp open|filtered unknown
+MAC Address: 52:54:00:12:35:02 (QEMU virtual NIC)
+
+Nmap scan report for 10.0.2.3
+Host is up (0.0012s latency).
+Not shown: 989 filtered udp ports (port-unreach)
+PORT      STATE         SERVICE
+67/udp    open|filtered dhcps
+123/udp   open|filtered ntp
+137/udp   open|filtered netbios-ns
+500/udp   open|filtered isakmp
+3702/udp  open|filtered ws-discovery
+4500/udp  open|filtered nat-t-ike
+5050/udp  open|filtered mmcc
+5353/udp  open|filtered zeroconf
+5355/udp  open|filtered llmnr
+53006/udp open|filtered unknown
+55544/udp open|filtered unknown
+MAC Address: 52:54:00:12:35:03 (QEMU virtual NIC)
+
+Nmap scan report for 10.0.2.4
+Host is up (0.0014s latency).
+Not shown: 987 filtered udp ports (port-unreach)
+PORT      STATE         SERVICE
+67/udp    open|filtered dhcps
+69/udp    open          tftp
+123/udp   open|filtered ntp
+137/udp   open|filtered netbios-ns
+500/udp   open|filtered isakmp
+1900/udp  open|filtered upnp
+3702/udp  open|filtered ws-discovery
+4500/udp  open|filtered nat-t-ike
+5050/udp  open|filtered mmcc
+5353/udp  open|filtered zeroconf
+5355/udp  open|filtered llmnr
+53006/udp open|filtered unknown
+55544/udp open|filtered unknown
+MAC Address: 52:54:00:12:35:04 (QEMU virtual NIC)
+
+Nmap scan report for 10.0.2.16
+Host is up (0.0000080s latency).
+All 1000 scanned ports on 10.0.2.16 are in ignored states.
+Not shown: 1000 closed udp ports (port-unreach)
+
+# Nmap done at Mon Jun 23 12:02:01 2025 -- 256 IP addresses (4 hosts up) scanned in 60.90 seconds
